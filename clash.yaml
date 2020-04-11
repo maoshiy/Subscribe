@@ -118,23 +118,49 @@ Proxy:
 
 
 # 配置开始
-- name: "V2ray节点的主机测试"
-  type: vmess
-  server: v2rayssr.com
-  port: 443
-  uuid: 5b8098e0-c95d-4c74-b5d5-4a330969c8cb
-  alterId: 2
-  cipher: auto
-  tls: true
-  network: ws
-  ws-path: /v2rayssrcom/
-  Host: v2rayssr.com
+- name: "BGP45-game"
+  type: ss
+  server: h.aeae.space
+  port: 8838
+  cipher: chacha20-ietf
+  password: "maoshiy.com"
+  # udp: true
 
-- name: "Trojan节点的主机测试"
-  type: trojan
-  server: www.v2rayssr.com
+- name: "Vultr-game"
+  type: ss
+  server: v.aeae.space
+  port: 29900
+  cipher: chacha20-ietf
+  password: "maoshiy.com"
+  plugin: "kcptun"
+  plugin-opts: "mode=fast;dscp=0;crypt=none;parityshard=3;rcvwnd=1024;key=it's a secrect;sndwnd=128;mtu=1350;datashard=10"
+
+- name: "DC4-game"
+  type: ss
+  server: v.aeae.space
+  port: 29901
+  cipher: chacha20-ietf
+  password: "maoshiy.com"
+  plugin: "kcptun"
+  plugin-opts: "mode=fast;dscp=0;crypt=none;parityshard=3;rcvwnd=1024;key=it's a secrect;sndwnd=128;mtu=1350;datashard=10"
+  
+- name: "DC4-v2ray"
+  type: ss
+  server: www.maosy.top
   port: 443
-  password: v2rayssr.com
+  cipher: chacha20-ietf-poly1305
+  password: "maoshiy.com"
+  plugin: "v2ray-plugin"
+  plugin-opts: "path=/v2ray;mux=4;host=www.maosy.top;tls"
+  
+- name: "Vultr-v2ray"
+  type: ss
+  server: v2v.maosy.top
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  passwdord: "maoshiy.com"
+  plugin: "v2ray-plugin"
+  plugin-opts: "path=\/v2ray;mux=4;host=v2v.maosy.top;tls"
 
  
 ###############################################################配置分割线
