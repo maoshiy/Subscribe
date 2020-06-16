@@ -1,3 +1,5 @@
 # Subscribe
-Ios
-https://github.com/maoshiy/Subscribe?files=1
+ssocks:
+https://git.io/Jf5Ig
+shadowsocket:
+https://git.io/Jf5IR
