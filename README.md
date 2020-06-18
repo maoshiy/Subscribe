@@ -7,3 +7,6 @@ https://git.io/Jf5Id
 
 shadowsocket:
 https://git.io/Jf5IH
+
+quantumult:
+https://git.io/JfFf5
