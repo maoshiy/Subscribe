@@ -10,3 +10,6 @@ https://git.io/Jf5IH
 
 quantumult:
 https://git.io/JfFf5
+
+v2rayNG:
+https://git.io/JUF86
